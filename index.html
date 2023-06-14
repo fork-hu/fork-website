@@ -1,0 +1,371 @@
+<html lang="hu">
+<head>
+	<title>Fork Éttermi Program</title>
+	<meta charset="UTF-8">
+	<meta name="Description" content="A Fork Éttermi Program remek választás, legyen szó bármely vendéglátóipari egységről. Könnyen kezelhető, letisztult, az adminisztrációs modul pedig bárhonnan elérhető. Ez és még sok más kiváló tulajdonsága teszi a Fork Éttermi Programot az egyik legmodernebb és legjobb termékké a piacon.">
+	<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+	<link rel="icon" href="img/favicon.ico" type="image/x-icon">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+	<link href="https://fonts.googleapis.com/css?family=Roboto:100,300,300i,400&amp;subset=latin-ext" rel="stylesheet">
+	
+	<link href="https://fonts.googleapis.com/css?family=Didact+Gothic" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+	      rel="stylesheet">
+	<link rel="stylesheet" href="animations.css">
+	<link rel="stylesheet" href="style.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+</head>
+<body>
+	<div class="modal modal-centered fade" id="contact-modal" tabindex="-1" role="dialog" aria-labelledby="contact-model-label" aria-hidden="true">
+		<div class="modal-dialog modal-dialog-centered" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title" id="contact-model-label"><span class="success">Sikeres</span><span class="fail">Sikertelen</span> üzenetküldés</h5>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+					<span aria-hidden="true">&times;</span>
+					</button>
+				</div>
+				<div class="modal-body">
+					<span class="success">Az üzenetet sikeresen elküldtük, hamarosan jelentkezünk a megadott email címen.</span>
+					<span class="fail">Az üzenetét nem sikerült elküldeni, kérjük helyette írjon az <a href="mailto:info@fork.hu">info@fork.hu</a> email címre.</span>
+				</div>
+				<div class="modal-footer">
+					<button type="button" data-dismiss="modal" class="btn btn-primary">Bezárás</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="topbar hidden">
+		<div class="container">
+			<div class="logo">
+				<img src="img/logo.png" alt="FORK">
+			</div>
+			<div class="menu">
+				<div class="menu-item"><span onclick="scrollToQuery('#programrol')">A programról</span></div>
+				<div class="menu-item"><span onclick="scrollToQuery('#funkciok')">Funkciók</span></div>
+				<div class="menu-item"><span onclick="scrollToQuery('#arak')">Árak</span></div>
+				<!-- <div class="menu-item"><span onclick="scrollToQuery('#galeria')">Galéria</span></div> -->
+				<div class="menu-item"><span onclick="scrollToQuery('#szolgaltatasok')">Szolgáltatások</span></div>
+				<div class="menu-item"><span onclick="scrollToQuery('#kapcsolat', 20)">Kapcsolat</span></div>
+			</div>
+			<div class="menu-icon noselect">
+				<i class="material-icons">menu</i>
+			</div>
+		</div>
+	</div>
+	
+	<div class="container-fluid welcome-screen">
+		<div class="container-fluid welcome-content">
+			<div class="blue-filter">
+				<div class="container content animatedParent animateOnce">
+					<div class="title animated fadeInLeftShort">
+						Lépjen be a modern <br> vendéglátás világába
+					</div>
+					<div onclick="scrollToQuery('#programrol')" class="button noselect animated fadeInUpShort delay-500">Tudjon meg többet</div>
+				</div>
+			</div>	
+		</div>
+	</div>
+
+	<div class="container-fluid intro" id="programrol">
+		<div class="container">
+			<div class="intro-logo">
+				<img src="img/logo.png" alt="FORK" class="into-logo">
+				<div class="noselect">Éttermi Program</div>
+			</div>
+			<div class="description">
+				A Fork Éttermi Program remek választás, legyen szó bármely vendéglátóipari egységről. Könnyen kezelhető, letisztult, az adminisztrációs modul pedig bárhonnan elérhető. Ez és még sok más kiváló tulajdonsága teszi a Fork Éttermi Programot az egyik legmodernebb és legjobb termékké a piacon.
+				<strong>A Fork a Magyar Turisztikai Ügynökség által kiállított igazolással rendelkező, NTAK-kal történő kommunikációra képes szoftver.</strong>
+			</div>
+			<div onclick="scrollToQuery('#kapcsolat', 20)" class="button noselect">Lépjen velünk kapcsolatba</div>
+		</div>
+		
+	</div>
+
+	<div class="container-fluid features" id="funkciok">
+			<div class="blue-filter blue-filter-features"></div>
+				<div class="spacing"></div>
+				<div class="feature-card feature-card-1 right">
+					<div class="card-content">
+						<div class="card-title">
+							Egyszerű, letisztult, gyors
+						</div>
+						<div class="card-content">
+							A barátságos és egyszerű kezelőfelületnek köszönhetően a program használata pilanatok  elsajátítható. Logikus felépítése, letisztultsága és villlámgyors működése biztosítja a legmagasabb szintű felhasználói élményt.
+						</div>
+					</div>
+				</div>
+				<div class="relative animatedParent animateOnce">
+					<img alt="Fork Éttermi Program" class="card-img-1 animated fadeInLeftShort" src="img/tablet_1.png"/>
+				</div>
+				<div class="clearfix"></div>
+				<div class="feature-card feature-card-2 left">
+					<div class="card-content">
+						<div class="card-title">
+							Sokoldalú
+						</div>
+						<div class="card-content">
+							Rugalmas testreszabhatósága biztosítja a program tökéletes és megbízható működését gyorséttermekben, kávéhazakban és hagyományos éttermi környezetben egyaránt.
+						</div>
+					</div>
+					<div class="clearfix"></div>
+				</div>
+				<div class="relative animatedParent animateOnce" data-appear-top-offset='300'>
+					<img alt="Fork Éttermi Program" class="card-img-2 animated fadeInRightShort" src="img/tablet_2.png"/>	
+				</div>
+				<div class="feature-card feature-card-3 right">
+					<div class="card-content">
+						<div class="card-title">
+							Mindenhol elérhető
+						</div>
+						<div class="card-content">
+							A Fork Éttermi Program a legkorszerűbb webes technológiákkal készült, ez biztosítja, hogy asztali számítógépen, tableten vagy okostelefonon egyaránt használható. A forgalomkövetést vagy az adminisztrációs feladatokat pedig akár otthonról is elvégezheti.
+						</div>
+					</div>
+				</div>
+				<div class="clearfix"></div>
+				<div class="relative animatedParent animateOnce" data-appear-top-offset='300'>
+					<img alt="Fork Éttermi Program" class="card-img-3 animated fadeInLeftShort" src="img/telefon.png"/>	
+				</div>
+				<div onclick="scrollToQuery('#kapcsolat', 20)" class="button noselect">Lépjen velünk kapcsolatba</div>
+			<!-- </div> -->
+	</div>
+	
+	<div class="container-fluid prices" id="arak">
+		<div class="description">
+			<div class="title">Árak</div>
+			<div class="text">
+				Tudjon meg többet a programról és az árakról.
+			</div>
+		</div>
+		<div class="container about-product">
+			<div class="row">
+				<div class="col-12 col-md-6 vector-images">
+					<img alt="Fork Éttermi Program" class= "mobile" src="img/mobile.png">
+					<img alt="Fork Admin" class="pc" src="img/pc.png">
+				</div>
+				<div class="col-12 col-md-6 product">
+					<p class="product-title"> Fork Éttermi Program</p>
+					<p class="about"> A Fork Éttermi Programot nagyon kedvező, havidíjas konstrukcióban veheti igénybe. A szoftver beszerzése így nem jár egyszeri nagy költséggel. A szolgáltatással ráadásul mindig a legfrisebb változatot használhatja, az új funkciókat azonnal, újabb költségek nélkül veheti igénybe.</p>
+					<p class="about"> A szolgáltatás díja:</p>
+					<p class="price">15 000 Ft / hónap</p>
+					<p class="about"> amely magába foglalja a műköséhez szűkséges háttérszolgáltatások és egy pincérterminál használatát.</p>
+					<p class="about"> További pincérterminálok havidíja:</p>
+					<p class="price2">7 500 Ft / terminál</p>
+					<p class="about">A forgalomkövetésre is alkalmas adminisztrációs modul tetszőleges számú eszközről használható, további költségek nélkül.</p>
+				</div>
+			</div>
+			<div onclick="scrollToQuery('#kapcsolat', 20)" class="button noselect">Rendelje meg most!</div>
+		</div>		
+	</div>
+		<!--
+		<div class="container flop">
+			<svg viewBox="0 0 400 150" preserveAspectRatio="none">
+				<defs>
+				    <filter id="f3" x="0" y="0" width="200%" height="200%">
+				      <feOffset result="offOut" in="SourceAlpha" dx="0" dy="1" />
+				      <feGaussianBlur result="blurOut" in="offOut" stdDeviation="26" />
+				      <feBlend in="SourceGraphic" in2="blurOut" mode="normal" />
+				    </filter>
+				  </defs>
+				<path d="M0 0 H0 400 L400 100 L200 0 L0 100 L0 0 Z" filter="url(#f3)" />
+			</svg>	
+		</div>
+		-->
+	</div>
+	
+<!-- 	<div class="container-fluid gallery" id="galeria">
+		<div class="wrapper">
+			<img src="img/screenshot-1.png" alt="">
+			<img src="img/screenshot-2.png" alt="">
+			<img src="img/screenshot-3.png" alt="">
+		</div>
+		<div class="container">
+			<div class="open-gallery noselect">
+				<span>Galéria</span>
+				<i class="material-icons">arrow_forward</i>
+			</div>
+		</div>
+		<div class="blue-filter"></div>
+		<div class="inset-shadow"></div>
+	</div> -->
+
+	<div class="services container-fluid" id="szolgaltatasok">
+		<div class="container">
+			<div class="description">
+				<div class="title">Szolgáltatások</div>
+				<div class="text">
+					Legyen szó technikai problémáról vagy az eszközök beszerzéséről, bármiben segítünk, akár teljesen díjmentesen.
+				</div>
+			</div>
+			<div class="row">
+				<div class="service col-xs-12 col-md-4">
+					<div class="title">
+						Beszerzés
+					</div>
+					<div class="text">
+						Nemcsak a programot szolgáltatjuk, de a szükséges eszközök kiválasztásában és beszerezésében is segítséget nyújtunk.
+					</div>
+					<i class="material-icons noselect">devices</i>
+				</div>
+			
+				<div class="service col-xs-12 col-md-4">
+					<div class="title">
+						Telepítés
+					</div>
+					<div class="text">
+						A háttérszolgáltások és a program telepítését ingyenes elvégezzük.
+					</div>
+					<i class="material-icons noselect">settings</i>
+				</div>
+			
+				<div class="service col-xs-12 col-md-4">
+					<div class="title">
+						Támogatás
+					</div>
+					<div class="text">
+						Bármilyen felmerülő kérdés vagy hiba esetén segítséget nyújtunk emailen, telefonon vagy - ha szükséges - személyesen.
+					</div>
+					<i class="material-icons noselect">forum</i>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="contact container-fluid" id="kapcsolat">
+		<div class="triangle"></div>
+		<div class="grey-bg">
+			<div class="container">
+				<div class="title">
+					Kapcsolat
+				</div>
+				<div class="text">
+					Kérdése van? Megrendelné a programot? Lépjen Velünk kapcsolatba! 
+				</div>
+				
+				<div class="row">
+					<div class="contact-method col-xs-12 col-md-4 order-md-2">
+						<a href="mailto:info@fork.hu">
+							<div>
+								<div class="circle">
+									<i class="material-icons">email</i>
+								</div>
+								<br>info@fork.hu	
+							</div>
+						</a>
+					</div>
+					
+					<div class="contact-method col-xs-12 col-md-4 order-md-1">
+						<a href="tel:+36302934494">
+							<div>
+								<div class="circle">
+									<i class="material-icons">phone</i>
+								</div>
+								<br>
+								+36 30 293 4494
+							</div>
+						</a>
+					</div>
+					
+					<div class="contact-method col-xs-12 col-md-4 order-md-3">
+						<a href="https://www.facebook.com/ForkEttermiProgram/" target="_blank" rel="noopener">
+							<div>
+								<div class="circle">
+									<img src="img/soc.png" alt="f">
+								</div>
+								<br>Fork Éttermi Program
+							</div>
+						</a>
+					</div>
+				</div>
+				
+				<!-- <div class="contact-form">
+					<form id="contact-form">
+						<div class="title">Küldjön üzenetet!</div>
+						<input type="text" placeholder="Név" aria-label="Név" name="name" class="form-control" required>
+						<input type="email" placeholder="E-mail cím" aria-label="E-mail cím" name="email" class="form-control" required>
+						<textarea class="form-control" placeholder="Üzenet" aria-label="Üzenet" name="message" required></textarea>
+						<button class="button noselect" tyoe="submit">Küldés</div>
+						<div class="clearfix"></div>
+					</form>
+				</div> -->
+			</div>
+		</div>
+	</div>
+	<div class="footer container-fluid">
+		<div>Fork Éttermi Program</div>
+		<div>© 2018</div>
+	</div>
+	<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script> 
+	<script src="css3-animate-it.js"></script>
+		<script>
+			function scrollToQuery(query, offset = 0){
+				window.scroll({
+					top: document.querySelector(query).getBoundingClientRect().top + window.scrollY - 64 - 20 + offset,
+					behavior: 'smooth'
+				});
+			}
+			sizeBlueFilter = function(){
+				$('.blue-filter.blue-filter-features').height($('.features').height())
+			}
+			let _menuShown = false
+			toggleTopBar = function(){
+				let scrollTop = window.pageYOffset || window.scrollTop
+				if (scrollTop>0 && !_menuShown){
+					$('.topbar').removeClass('hidden')
+					_menuShown = true
+				} else if (!scrollTop &&_menuShown){
+					$('.topbar').addClass('hidden')
+					_menuShown = false
+				}
+			}
+			$(window).resize(sizeBlueFilter)
+			$(document).ready(function(){
+				$('.carousel').carousel({
+	  				interval: 2000,
+	  				pause: false,
+				})
+				sizeBlueFilter()
+				toggleTopBar()
+				document.addEventListener("scroll", toggleTopBar, {passive: true})
+
+				$('#contact-form').submit(function(e){				
+					e.preventDefault()
+					$.ajax({
+						type: "POST",
+						url: "contact/contact.php",
+						data: $('#contact-form').serialize(),
+						dataType: 'json',
+						complete: function(response) {
+							if (response.status==200){
+								$('#contact-modal a').attr("href", "mailto:info@fork.hu")
+								$('#contact-modal .fail').hide()
+								$('#contact-modal .success').show()
+								$('#contact-form input').val("")
+								$('#contact-form textarea').val("")
+							} else {
+								$('#contact-modal .fail').show()
+								$('#contact-modal .success').hide()
+								$('#contact-modal a').attr("href", "mailto:info@fork.hu?body=" + $('#contact-form textarea').val())
+							}
+							
+							$('#contact-modal').modal('show')
+						}
+					})
+				})
+			})
+		</script>
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-112216799-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-112216799-1');
+	</script>
+</body>
+</html>
